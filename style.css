@@ -1,0 +1,527 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: rgb(232, 232, 234);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+
+/* input{
+    background-image: url(https://www.freepnglogos.com/uploads/search-png/search-icon-transparent-images-vector-16.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: rgb(232, 232, 234);
+    text-indent: 30px;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+} */
+
+.limitedOffer{
+    cursor: pointer;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight: normal;
+    
+}
+
+.slider{
+    /* background: url(img/kai-oberhauser-UnWYxJ_0WnM-unsplash.jpg); */
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 81%);
+    background-size: 500px;
+    overflow: hidden;
+    height: 700px;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sliderItem img{
+    border-radius: 12px;
+}
+
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+/* .sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+} */
+
+.buyButton{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    z-index: 1;
+    height: 40px;
+    background-color: white;
+    border-radius: 2px;
+    border: none;
+    transition: 0.15s;
+}
+
+.buyButton:hover{
+    color: white;
+    background-color: #111;
+}
+
+.artists{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.artist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.artistName{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.artistDescription{
+    width: 70%;
+    margin: 20px;
+}
+
+.artist img{
+    border-radius: 20px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.artist img:hover{
+    box-shadow: 0 0 50px gray; 
+}
+
+
+.product{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
+}
+
+.product img{
+    height: 400px;
+    margin: 170px;
+    border-radius: 2px;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 55px;
+    font-weight: 900;
+    margin-top: 70px;
+}
+
+.productDescription{
+    font-size: 18px;
+    color: gray;
+}
+
+.versions{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.version{
+    padding: 5px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    font: 20px;
+    margin: 4px;
+    border-radius: 2px;
+    transition: 0.15s;
+}
+
+.version:hover{
+    background-color: darkgray;
+}
+
+.productButton{
+    float: left;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: 0.15s;
+}
+
+.productButton:hover{
+    background-color: #303030;
+}
+
+.productButton:active{
+    background-color: #606060;
+}
+
+.payment{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: -3px 5px 16px -5px rgba(35,33,33,0.75);
+-webkit-box-shadow: -3px 5px 16px -5px rgba(35,33,33,0.75);
+-moz-box-shadow: -3px 5px 16px -5px rgba(35,33,33,0.75);
+transition: 1s;
+}
+
+.payTitle{
+    font-size: 40px;
+    color: gray;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 2px;
+    border: solid 1px gray;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 20%;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    box-shadow: -3px 5px 16px -5px rgba(35,33,33,0.75);
+-webkit-box-shadow: -3px 5px 16px -5px rgba(35,33,33,0.75);
+    background-color: rgb(54, 239, 233);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    color: black;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+
+.galleryItem{
+    width: 33.333%;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    background-color: #363535;
+    color: white;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footerMenu{
+    width: 50%;
+}
+
+.fMenuTitle{
+    font-size: 20px;
+}
+
+.footerRight{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fInput{
+    padding: 5px;
+}
+
+.fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.fMenuList{
+    padding: 0;
+    list-style: none;
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    color: rgb(172, 171, 171);
+    cursor: pointer;
+}
+
+.fIcons{
+    display: flex;
+}
+
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#api1{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    /* margin-left: 340px; */
+    background-color: #111;
+    margin: 0;
+    height: 300px;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#api2{
+    display: flex;
+    justify-content: center;
+}
+
+#apidetail{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding: 20px;
+}
+
+#api{
+    padding: 30px;
+    color: white;
+    width: 50%;
+    font-size: 30px;
+}
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 20px;
+
+    }
+
+    .search{
+        display: none;
+    }
+
+    .bottom{
+        flex-wrap: wrap;
+    }
+
+    .menuItem{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+    .slider{
+        clip-path: none;
+    }
+
+    .sliderImg{
+        width: 90%;
+        padding-left: 30px;
+    }
+
+    .sliderTitle{
+        display: none;
+    }
+
+    .buyButton{
+        right: 0;
+        top: 0;
+    }
+
+    .artists{
+        flex-direction: column;
+    }
+
+    .product img{
+        height: 300px;
+        width: 300px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+
+    .product{
+        /* clip-path: none; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productDetails{
+        width: 90%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .productTitle{
+        font-size: 30px;
+        margin-top: 0px;
+        top: 0;
+    }
+
+    .versions{
+        margin-bottom: 2px;
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLeft{
+        padding: 20px;
+        width: 90%;
+    }
+
+    .footerRight{
+        padding: 20px;
+        width: 90%;
+    }
+
+    .payment{
+        width: 90%;
+        padding: 20px;
+    }
+
+    #api1{
+        display: none;
+    }
+
+
+}
+
+

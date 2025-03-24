@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="top">
+            <div class="navItem">
+                <h3>Music Store</h3>
+                <!-- <img src="img/music-logo.png" height="30px" alt="logo"> -->
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <img src="img/search-icon-clip-art-clkerm-vector-clip-art-online-22.png" height="20px" alt="search icon" class="searchIcon">
+                    <input type="text" placeholder="Search for Songs" class="searchInput">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Shop Sale &#8250;</span>
+            </div>
+        </div>
+        <div class="bottom">
+            <h3 class="menuItem">DIGITAL DOWNLOADS</h3>
+            <h3 class="menuItem">RECORDS</h3>
+            <h3 class="menuItem">CDs</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="img/Divisive_Cover-FINAL.jpg" width="450px" alt="" class="sliderImg">
+                <div class="sliderBG"></div>
+                <h1 class="sliderTitle">DISTURBED <br> DIVISIVE <br>DIGITAL <br>DOWNLOAD</h1>
+                <h2 class="sliderPrice">$60</h2>
+                <a href="#product"><button class="buyButton">BUY NOW</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="img/megadeth_rustinpeace_small_dfd5214e-db49-4869-84f8-a1d9adba51d8_700x700-removebg-preview.png" alt="" class="sliderImg">
+                <div class="sliderBG"></div>
+                <h1 class="sliderTitle">MEGADETH <br> RUST <br>IN <br>PEACE <br> RECORD</h1>
+                <h2 class="sliderPrice">$60</h2>
+                <a href="#product"><button class="buyButton">BUY NOW</button></a>
+            </div>
+            <div class="sliderItem">
+                <img src="img/7196s8BdeTL._SX522_-removebg-preview.png"  height="500px" alt="" class="sliderImg">
+                <div class="sliderBG"></div>
+                <h1 class="sliderTitle">FIVE <br> FINGER <br>DEATH <br>PUNCH <br> AFTER <br>LIFE <br> CD</h1>
+                <h2 class="sliderPrice">$30</h2>
+                <a href="#product"><button class="buyButton">BUY NOW</button></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="artists">
+        <div class="artist">
+            <span class="artistName">IMAGINE DRAGONS</span>
+            <img src="img/ab6761610000e5eb920dc1f617550de8388f368e.jpeg" height="300px" alt="img" class="artistsImg">
+            
+            <span class="artistDescription">Listen to their new album MECURY</span>
+        </div>
+
+        <div class="artist">
+            <span class="artistName">DOROTHY</span>
+            <img src="img/dorothy.jpeg" height="300px" alt="img" class="artistsImg">
+            <span class="artistDescription">Listen to her new album REST IN PEACE</span>
+        </div>
+
+        <div class="artist">
+            <span class="artistName">PIERCE THE VEIL</span>
+            <img src="img/ptv.jpeg" height="300px" alt="img" class="artistsImg">
+            
+            <span class="artistDescription">Listen to their new album THE JAWS OF LIFE</span>
+        </div>
+    </div>
+    <div class="product" id="product">
+        <img src="img/Divisive_Cover-FINAL.jpg" alt="" class="productImage">
+        <div class="productDetails">
+            <h1 class="productTitle">DIVISIVE ALBUM</h1>
+            <h2 class="productPrice">$19.99</h2>
+            <p class="productDescription">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, voluptates iure non quia ex quisquam similique qui eveniet necessitatibus doloribus? Pariatur debitis quod accusamus dolorem ratione sunt, fuga accusantium!
+            </p>
+            <div class="versions">
+                <div class="version">Delux Edition</div>
+                <div class="version">Normal Edition</div>
+            </div>
+            <button class="productButton">BUY</button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle">Info</h1>
+            <label>Full Name</label>
+            <input type="text" placeholder="Name" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Phone" class="payInput">
+            <label>Shipping Address</label>
+            <input type="text" placeholder="Address" class="payInput">
+            <h1 class="payTitle">Card Info</h1>
+            <label>Card Number</label>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Rock On</h1>
+            <img src="img/ben-collins-XZNG4Px0PU8-unsplash.jpg" height="400px" class="galleryImg" alt="">
+        </div>
+        <div class="galleryItem">
+            <img src="img/ehimetalor-akhere-unuabona-DP5iZ4qflmU-unsplash.jpg" height="400px" class="galleryImg" alt="">
+            <h1 class="galleryTitle">Be Free</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself</h1>
+            <img src="img/hans-eiskonen-fzEc8omEqfw-unsplash.jpg" height="400px" class="galleryImg" alt="">
+        </div>
+    </div>
+    <div id="api1">
+        <h2>Listen to something new</h2>
+        <div id="api2">
+            <div id="apidetail">
+                <p>
+                    Halsey
+                </p>
+            </div>
+            <div id="api"></div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fMenuList">
+                    <li class="fListItem">Records</li>
+                    <li class="fListItem">Digital Downloads</li>
+                    <li class="fListItem">Cds</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Never Miss A New Release</h1>
+                <div class="fmail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Submit</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <a href="https://www.linkedin.com/in/christina-johnson-480857249/" target="_blank"><img src="img/LinkedIn_icon.svg.png" class="fIcon" alt=""></a>
+                    <a href="https://github.com/cjohnson7777" target="_blank"><img src="img/GitHub-Mark.png" class="fIcon" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
